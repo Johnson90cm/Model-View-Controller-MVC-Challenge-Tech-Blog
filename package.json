@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Johnson90cm/Model-View-Controller-MVC-Challenge-Tech-Blog/issues"
   },
-  "homepage": "https://github.com/Johnson90cm/Model-View-Controller-MVC-Challenge-Tech-Blog#readme"
+  "homepage": "https://github.com/Johnson90cm/Model-View-Controller-MVC-Challenge-Tech-Blog#readme",
+  "dependencies": {
+    "handlebars": "^4.7.7"
+  }
 }
