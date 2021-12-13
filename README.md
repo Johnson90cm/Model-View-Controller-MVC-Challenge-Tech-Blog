@@ -1,4 +1,4 @@
-# Model-View-Controller-MVC-Challenge-Tech-Blog
+# Model-View-Controller-Tech-Blog
 
 ### Table of Contents
 * [Description](#description)
