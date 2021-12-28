@@ -1,20 +1,16 @@
-// dependancies
 const express = require('express');
-const session = require('express-session');
-const hbs = exphbs.create({ helpers });
-const path = require('path');
-const exphbs = require('express-handlebars');
 const routes = require('./controllers');
-const helpers = require('./utils/helpers');
 const sequelize = require('./config/connection');
-
-
-// server
+const path = require('path');
+const helpers = require('./utils/helpers');
+const exphbs = require('express-handlebars');
+const hbs = exphbs.create({ helpers });
+const session = require('express-session');
 const app = express();
 const PORT = process.env.PORT || 3001;
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const sess = {
-    secret: 'secret',
+    secret: 'Super secret secret',
     cookie: { maxAge: 36000 },
     resave: false,
     saveUninitialized: true,
@@ -22,6 +18,8 @@ const sess = {
         db: sequelize
     })
 };
+
+
 app.use(session(sess));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

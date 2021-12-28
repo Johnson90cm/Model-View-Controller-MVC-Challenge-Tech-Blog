@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "test": "jest",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeds/index.js"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Johnson90cm/Model-View-Controller-MVC-Challenge-Tech-Blog.git"
@@ -22,9 +25,10 @@
     "connect-session-sequelize": "^7.1.2",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "express-handlebars": "^6.0.2",
     "express-session": "^1.17.2",
     "handlebars": "^4.7.7",
     "mysql2": "^2.3.3",
-    "sequelize": "^6.12.0-beta.3"
+    "sequelize": "^6.12.4"
   }
 }
