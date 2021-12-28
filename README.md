@@ -7,10 +7,11 @@
 ## Description
 This application is a working fullstack application using sequelize
 
-## Demo
-Link: 
-
 ## Installation
+
+1. clone the repo
+2. in the root "npm run seed"
+3. in the root "npm run start"
 
 
 ## Questions? 
